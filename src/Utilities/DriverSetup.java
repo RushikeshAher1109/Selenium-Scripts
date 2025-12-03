@@ -14,8 +14,6 @@ public class DriverSetup {
 
     public static WebDriver getDriver() {
 
-        // Agar tum Selenium Manager use nahi kar rahe ho aur path dena padta hai toh ye uncomment karo:
-        // System.setProperty("webdriver.chrome.driver", "C:\\seleniumwebdriver\\chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
 

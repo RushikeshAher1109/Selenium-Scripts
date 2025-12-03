@@ -20,10 +20,7 @@ public class product_order extends BaseTest {
         // Actions object using driver from BaseTest
         Actions act = new Actions(driver);
 
-       
-
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
-
         driver.get("https://automationexercise.com/");
 
         // LOGIN
@@ -44,7 +41,6 @@ public class product_order extends BaseTest {
         // SEARCH PRODUCTS
         driver.findElement(By.xpath("//input[@id='search_product']")).sendKeys("Shirts");
         Thread.sleep(3000);
-
         driver.findElement(By.xpath("//button[@id='submit_search']")).click();
         Thread.sleep(3000);
 

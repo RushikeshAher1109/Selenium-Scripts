@@ -9,17 +9,17 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
-    protected WebDriver driver;   // Ye saare test classes mein use hoga
+    protected WebDriver driver;   
 
     @BeforeMethod
     public void setUp() {
-        driver = DriverSetup.getDriver();   // Yahin se driver milega
+        driver = DriverSetup.getDriver();   
     }
 
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
-            driver.quit();   // har test ke baad browser band
+            driver.quit();   
         }
     }
 }
